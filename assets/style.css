@@ -1,0 +1,11 @@
+#jumbotron {
+    height: 1000px;
+    background-image: url("/assets/images/chaps2.png");
+    background-position: top;
+    background-repeat: none;
+    background-size: cover;
+}
+
+#logo {
+    /* margin: 0 auto; */
+}
