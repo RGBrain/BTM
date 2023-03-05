@@ -35,54 +35,36 @@ h2 {
 /* About */
 
 #about {
-    background-color: var(--chaps-black);
+    /* background-color: var(--chaps-black); */
     display: flex;
-    justify-content: flex-start;
     padding-top: -55px;
-    background-image: url("../assets/images/pexels-miguel-á-padriñán-2882571.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .card-area {
     /* border: blue solid 5px; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: stretch;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     background-color: var(--chaps-black);
-    
+    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;;
+    flex-wrap: wrap;
 }
+
 .card {
-    /* border: green solid 5px; */
-    padding: 0px;
+    background-color: var(--off-white);
+    border: var(--bone) solid 10px;
+    border-radius: 8px;
+    padding: 50px;
     margin: 0px;
-    /* width: 100%; */
+    /* overflow: auto; */
+    min-width: 250px;
     /* min-width: 500px; */
-    
-}
-
-
-#difference {
-    background-color: var(--chaps-black);
-    display: flex;
-    justify-content: flex-start;
-    padding-top: -55px;
-    background-image: url("../assets/images/email2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.card {
-    color: var(--off-white);
     margin: 10%;
-    /* padding: 5%; */
-    /* border: var(--smoky-black) solid 3px; */
 }
 
 .strikethrough {
@@ -104,8 +86,10 @@ h2 {
     margin: auto;
 }
 
-#contact * {
+.contact-info {
     /* width: 100%; */
+    border-top: var(--bone) solid 5px;
+    border-radius: 50px;
 }
 
 
@@ -151,3 +135,15 @@ h3 {
     align-items: flex-end;
     margin-bottom: 20px;
 }
+
+
+/*  MEDIA QUERIES */
+
+/* mobiles */
+
+@media (max-width: 1200px) {
+    .card-area {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+  }

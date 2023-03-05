@@ -20,9 +20,9 @@
     <div class="card">
       <h2>About</h3>
         <p></br></p>
-        <p>As you might imagine, as well as representing my clients, I make outbound calls to generate <i>my own</i> sales opportunities. People often tell me that they have tried using a telemarketing agency "with limited success" - that when the dust settled, the ROI simply wasn't there.</p>
+        <p>As you might imagine, as well as representing my clients, I make outbound calls to generate <i>my own</i> sales opportunities. People often tell me that they have tried using a telemarketing agency "...with limited success" - that when the dust settled, the ROI simply wasn't there.</p>
         <br/>
-        <p>The age-old disconnect between 'Sales' and 'Marketing": a telemarketing agency saying that they've 'booked meetings' and the client with little in the way of actual revenue.</p>
+        <p>The age-old disconnect between 'Sales' and 'Marketing" rearing its head: meetings booked but little in the way of actual revenue.</p>
         <br/>
         <p>I've been doing this for 12 years now, although Sales is where I started prior to this - my focus is unearthing opportunites that convert into revenue, helping your business to scale.  I deliver on what you hope telemarketing will be: Professional, intelligent, and effective.</p>
         <p></p>
@@ -30,11 +30,58 @@
         <br/>
           
       </div>
+      <div class="card" id="contact-form">
+        <h2>Get in Touch</h3>
+          <section">
+            <div >
+              <div>
+                  <div id="form-container" >
+                      <form ref={form} onSubmit={sendEmail}>
+                          <div>
+                              <h2>Get in Touch</h2>
+                          </div>
+                          <input 
+                              type="name" 
+                              name="user_name" 
+                              id="name" 
+                              placeholder="Name"
+                              value={user_name}
+                              onChange={handleNameChange}
+                          />
+  
+                          <input 
+                              type="email" 
+                              for="email" 
+                              name="user_email" 
+                              id="email" 
+                              placeholder="Email"
+                              value={user_email}
+                              onChange={handleEmailChange}
+                          />
+                          
+                          <textarea 
+                              id="query" 
+                              for="email_body" 
+                              name="message" 
+                              placeholder="Message" 
+                              value={message}
+                              onChange={handleMsgChange}>
+                          </textarea>
+  
+                          <div>
+                              <button type="submit">Submit</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </section>
+            
+        </div>
   </div>
 </div>
 
-<div class="container" id="difference"></div>
-<div class="" id="contact">
+<div class="contact-info" id="contact">
       <h3>Contact</h3>
       <div><a id="phone" href="#">07807 258 642</a></div>
       <div><a href="mailto:richard@braintelemarketing.com">richard@braintelemarketing.com</a></div>
