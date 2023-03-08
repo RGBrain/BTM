@@ -7,15 +7,16 @@
     --orange: #D16014
   }
   
-/* Remove margins */
+/* Global remove margins */
 * {
     margin: 0px;
-    font-family: 'Roboto Slab'
+    font-family: 'Poppins'
 }
 
 body {
     background-color: var(--bone);
 }
+
 
 #jumbotron {
     height: 1400px;
@@ -31,35 +32,45 @@ h2 {
     color: var();
 }
 
-#about {
-    background-color: var(--chaps-black);
-    display: flex;
-    justify-content: flex-start;
-    padding-top: -55px;
-    background-image: url("../assets/images/about.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+/* About */
 
+#about {
+    /* background-color: var(--chaps-black); */
+    display: flex;
+    /* padding-top: -55px; */
 }
 
-#difference {
-    background-color: var(--chaps-black);
-    display: flex;
-    justify-content: flex-start;
-    padding-top: -55px;
-    background-image: url("../assets/images/email2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+#about-card {
+    background-color: var(--bone);
+}
 
+.card-area {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    min-width: 300px;
+    background-color: var(--chaps-black);
+    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    flex-wrap: wrap;
 }
 
 .card {
-    color: var(--off-white);
-    margin: 10%;
-    /* padding: 5%; */
-    /* border: var(--smoky-black) solid 3px; */
+    background-color: var(--bone);
+    border: var(--bone) solid 10px;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0px;
+    width: 80%;
+    min-width: 250px;
+    max-width: 300px;
+    /* min-width: 500px; */
+    margin: 5%;
 }
 
 .strikethrough {
@@ -81,8 +92,10 @@ h2 {
     margin: auto;
 }
 
-#contact * {
+.contact-info {
     /* width: 100%; */
+    border-top: var(--bone) solid 5px;
+    border-radius: 50px;
 }
 
 
@@ -120,11 +133,65 @@ h3 {
 #footer {
     background-color: var(--bone);
     justify-content: center;
-    height: 230px;
+    height: 170px;
     justify-content: center;
     justify-items: center;
     font-family: 'Roboto Slab';
     text-align: center;
     align-items: flex-end;
     margin-bottom: 20px;
+}
+
+footer a {
+    margin-top: 20px;
+    /* color: red; */
+    font-size: 1em;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--chaps-black);
+    font-size: 1.5em;
+}
+
+
+/*  MEDIA QUERIES */
+
+/* mobiles */
+
+
+/* Remove curved borders on top of about section */
+@media (max-width: 800px) {
+    #jumbotron {
+        height: 670px;
+        padding-top: 50px;
+        /* padding-left: 120px; */
+        /* background-position-x; */
+        /* background-position-x: -20%; */
+        /* background-position-y: -90%; */
+        background-repeat: no-repeat;
+        /* min-width: 600px; */
+    }
+
+    #jumbotron img {
+        margin-top: -40px;
+        height: 125px;
+        width: 125px;
+
+    }
+
+    .card-area {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    
+    .card {
+        max-width: 800px;
+        
+    }
+    #about {
+        height: 1100px;
+
+    }
 }
