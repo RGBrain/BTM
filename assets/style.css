@@ -54,7 +54,9 @@ h2 {
     background-color: var(--chaps-black);
     border-radius: 50px;
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     flex-wrap: wrap;
 }
 
@@ -158,8 +160,27 @@ a {
 
 /* mobiles */
 
+
 /* Remove curved borders on top of about section */
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
+    #jumbotron {
+        height: 670px;
+        padding-top: 50px;
+        /* padding-left: 120px; */
+        /* background-position-x; */
+        /* background-position-x: -20%; */
+        /* background-position-y: -90%; */
+        background-repeat: no-repeat;
+        /* min-width: 600px; */
+    }
+
+    #jumbotron img {
+        margin-top: -40px;
+        height: 125px;
+        width: 125px;
+
+    }
+
     .card-area {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
