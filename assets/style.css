@@ -163,11 +163,9 @@ a {
     font-size: 1.5em;
 }
 
-
-/*  MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 /* mobiles */
-
 
 /* Remove curved borders on top of about section */
 @media (max-width: 800px) {
@@ -205,4 +203,40 @@ a {
     #about-card {
         border-radius: 8px;
     }
+}
+
+/* small mobiles */
+
+
+/* Remove curved borders on top of about section */
+@media (max-width: 370px) {
+    #jumbotron {
+        height: 500px;
+        padding-top: 50px;
+        /* padding-left: 120px; */
+        /* background-position-x: 80%; */
+        /* background-position-x: -20%; */
+        background-position-y: 100%;
+        background-size: 120%;
+
+    }
+
+}
+
+/* extra small mobiles */
+
+
+/* Remove curved borders on top of about section */
+@media (max-width: 320px) {
+    #jumbotron {
+        height: 670px;
+        padding-top: 50px;
+        /* padding-left: 120px; */
+        background-position-x: 80%;
+        /* background-position-x: -20%; */
+        background-position-y: -20%;
+        background-size: 300%;
+
+    }
+
 }
