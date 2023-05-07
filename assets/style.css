@@ -10,7 +10,8 @@
 /* Global remove margins */
 * {
     margin: 0px;
-    font-family: 'Poppins'
+    font-family: 'Poppins';
+    box-sizing: border-box;
 }
 
 body {
@@ -28,31 +29,19 @@ body {
     justify-content: center;
 }
 
-h2 {
-    color: var();
-}
-
 /* About */
-
-#about {
-    /* background-color: var(--chaps-black); */
-    display: flex;
-    /* padding-top: -55px; */
-}
 
 #about-card {
     background-color: var(--bone);
+    /* border: orange 5px solid; */
 }
 
 .card-area {
-    padding: 2px;
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 80%;
+    height: 85%;
     min-width: 300px;
     background-color: var(--chaps-black);
-    border-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 0px;
@@ -62,20 +51,39 @@ h2 {
 
 .card {
     background-color: var(--bone);
-    border: var(--bone) solid 10px;
-    padding: 5px;
-    border-radius: 8px;
-    margin: 0px;
-    width: 80%;
+    border: var(--off-white) solid 2px;
+    width: 40%;
     min-width: 250px;
-    max-width: 300px;
-    /* min-width: 500px; */
+    max-width: 800px;
     margin: 5%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-.strikethrough {
-    text-decoration: line-through;
+#about-card, #contact-form {
+    padding: 20px;
 }
+
+/* Contact Form */
+
+label {
+    /* border: green solid 5px; */
+    /* margin: 10px; */
+    width: 80%;
+    display: block;
+}
+
+input, textarea, #submit-btn {
+    width: 100%;
+    /* max-width: 800px; */
+    /* border: orange 2px solid; */
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /* width: 300px; */
+}
+
 
 #difference {
     background-color: var(--bone);
@@ -188,10 +196,13 @@ a {
     
     .card {
         max-width: 800px;
+        width: 90%;
         
     }
     #about {
         height: 1100px;
-
+    }
+    #about-card {
+        border-radius: 8px;
     }
 }
