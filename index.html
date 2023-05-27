@@ -11,31 +11,14 @@
 
   <link href="assets/style.css" rel="stylesheet">
   <title>Brain Telemarketing</title>
+
 </head>
 <body>
 <div class="container" id="jumbotron">
   <img src="assets/images/Brain.png" alt="Brain logo" id="logo" width="230" height="230">
 </div>
 
-<!-- <div class="card" id="about-card">
-  <h2>About</h3>
-    <p></br></p>
-    <p>
-    <p>Professional, intelligent, and effective.</p>
-    <br/>
-    <p>All projects handled personally, with 12 years of appointment-setting for software companies.</p>
-    <br/>
-    <p>My focus is unearthing opportunites that convert into revenue, helping your business to scale.</p>  
-  </br>
-    <p>I deliver what you hope telemarketing will be.</p>
-    </br>
-    <p></p>
-</div> -->
-
-
-
 <div class="container" id="about">
-
   <div class="card-area row">
     <div class="card" id="about-card">
       <h2>About</h3>
@@ -60,14 +43,29 @@
               <div>
                   <div id="form-container" >
                     <form id="contact-form">
-                      <input type="hidden" name="contact_number">
                       <label>Name</label>
-                      <input type="text" name="user_name">
+                      <input 
+                        type="text" 
+                        name="user_name"
+                        value={user_name}
+                        id="name">
                       <label>Email</label>
-                      <input type="email" name="user_email">
+                      <input 
+                        type="email" 
+                        name="user_email"
+                        value={user_email}
+                        id="email">
                       <label>Message</label>
-                      <textarea name="message"></textarea>
-                      <input type="submit" value="Send" id="submit-btn">
+                      <textarea 
+                        id="msg"
+                        name="message"
+                        value="msg"
+                        id="msg">
+                      </textarea>
+                      <input 
+                        type="submit" 
+                        value="Send" 
+                        id="submit-btn">
                   </form>
                       <!-- <form ref={form} onSubmit={sendEmail}>
 
