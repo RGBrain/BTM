@@ -166,7 +166,7 @@ a {
 
 /* MEDIA QUERIES */
 
-/* mobiles */
+/* MOBILES */
 
 /* Remove curved borders on top of about section */
 @media (max-width: 800px) {
@@ -211,8 +211,7 @@ a {
 
 }
 
-/* small mobiles */
-
+/* SMALL MOBILES */
 
 /* Remove curved borders on top of about section */
 @media (max-width: 370px) {
