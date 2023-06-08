@@ -83,6 +83,8 @@ textarea {
 
 #submit-btn {
     height: 30px;
+    color: var(--off-white);
+    background-color: var(--chaps-black);
 }
 
 #contact {
@@ -132,6 +134,10 @@ h3 {
     margin-top: -100px;
 }
 
+h5 a {
+    font-family: 'Orbitron', sans-serif;
+}
+
 a {
     margin-top: 20px;
     font-size: 1em;
@@ -161,7 +167,7 @@ a {
     .card-area {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        height: 85%;
+        height: 100%;
     }
     
     .card {
@@ -170,7 +176,7 @@ a {
     }
 
     #about {
-        height: 1100px;
+        height: 1000px;
     }
 
     #about-card {
@@ -178,7 +184,7 @@ a {
     }
 
     #footer {
-        margin-top: 0px;
+        margin-top: 200px;
     }
 
 }
